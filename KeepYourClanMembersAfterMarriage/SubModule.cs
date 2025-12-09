@@ -10,6 +10,8 @@ namespace KeepYourClanMembersAfterMarriage
         {
             base.OnSubModuleLoad();
 
+            _ = Configs.Instance;
+
             Harmony harmony = new Harmony("com.keepyourclanmembersaftermarriage");
 
             harmony.PatchAll();
